@@ -16,6 +16,10 @@ import javax.swing.SwingConstants;
 
 public class Example3 extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5783033055698451642L;
 	private JPanel contentPane;
 
 	/**
@@ -49,7 +53,7 @@ public class Example3 extends JFrame {
 		contentPane.add(imageView, BorderLayout.CENTER);
 		imageView.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		JLabel header = new JLabel("画像ファイルの読み込みサンプル");
+		JLabel header = new JLabel(System.getProperty("user.dir"));
 		header.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(header, BorderLayout.NORTH);
 		
