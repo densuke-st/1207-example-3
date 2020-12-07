@@ -1,12 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Image;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.Scanner;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -53,7 +47,7 @@ public class Example3 extends JFrame {
 		contentPane.add(imageView, BorderLayout.CENTER);
 		imageView.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		JLabel header = new JLabel(System.getProperty("user.dir"));
+		JLabel header = new JLabel("実行dir: " + System.getProperty("user.dir"));
 		header.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(header, BorderLayout.NORTH);
 		
